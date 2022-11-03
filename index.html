@@ -3,40 +3,101 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <img src="./Cat.png" alt="profile photo" />
-    <p>
-      name, affiliation, contact information (email), your GitHub account,
-      interests, etc. <br />
-      3. Links (10 pts): Include at least three hyperlinks using <br />
-      4. Table (10 pts): Include at least one table using. <br />
-      5. List (10 pts): Include at least one list using. <br />
-    </p>
-    <nav>
-      <a href="#info"></a>
-      <a href="#interest"></a>
-      <a href="#contact"></a>
-    </nav>
-    <section id="info"></section>
-    <section id="interest">
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
+    <nav class="navbar bg-light d-flex">
+      <ul class="nav">
+        <li class="nav-item border border-color-primary mx-2">
+          <a class="nav-link active" aria-current="page" href="#info"
+            >INFORMATION</a
+          >
+        </li>
+        <li class="nav-item border border-color-primary mx-2">
+          <a class="nav-link" href="#affiliation">AFFILIATION</a>
+        </li>
+        <li class="nav-item border border-color-primary mx-2">
+          <a class="nav-link" href="#interest">INTEREST</a>
+        </li>
+        <li class="nav-item border border-color-primary mx-2">
+          <a class="nav-link" href="#contact">CONTACT</a>
+        </li>
       </ul>
-      <table>
-        <tr>
-          <th></th>
-          <th></th>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-        </tr>
-      </table>
+    </nav>
+    <section class="fs-5 d-flex align-items-end" id="info">
+      <img class="shadow-sm" src="./photo.png" alt="profile photo" />
+      <p class="mx-2">
+        만나서 반갑습니다! 0년차 초보 개발자 이송목입니다. <br />
+        함께, 즐겁게, 세상에 가치를 더하고싶습니다. <br />
+        음악과 운동에 관심이 많습니다.
+      </p>
     </section>
-    <section id="contact"></section>
+    <section class="fs-5 mx-4" id="affiliation">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h3>AFFILIATION</h3>
+          <ul>
+            <li>대구 진월초등학교 졸업</li>
+            <li>대구 대진중학교 졸업</li>
+            <li>대구 대곡고등학교 졸업</li>
+            <li>성균관대학교 재학</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="fs-5 mx-4" id="interest">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h3>INTEREST</h3>
+          <table class="table table-striped">
+            <tr>
+              <th>UI/UX</th>
+              <td>Figma</td>
+              <td>★★☆☆☆</td>
+            </tr>
+            <tr>
+              <th>FRONT-END</th>
+              <td>React</td>
+              <td>☆☆☆☆☆</td>
+            </tr>
+            <tr>
+              <th>BACK-END</th>
+              <td>Next.js</td>
+              <td>☆☆☆☆☆</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+    <section class="fs-5 mx-4" id="contact">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h3>CONTACT</h3>
+          <table class="table table-striped">
+            <tr>
+              <th>Email</th>
+              <td>lsm3645@g.skku.edu</td>
+            </tr>
+            <tr>
+              <th>GitHub</th>
+              <td>fine-pine</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
